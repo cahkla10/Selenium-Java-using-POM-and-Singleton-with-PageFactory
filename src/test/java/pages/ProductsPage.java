@@ -18,28 +18,28 @@ public class ProductsPage {
     }
 
     @FindBy(xpath = "//*[@class='title']")
-    List<WebElement> titlePage;
+    private List<WebElement> titlePage;
 
     @FindBy(id = "react-burger-menu-btn")
-    WebElement burgerMenu;
+    private WebElement burgerMenu;
 
     @FindBy(xpath = "//*[@class='product_sort_container']")
-    WebElement sortDropDown;
+    private WebElement sortDropDown;
 
     @FindBy(xpath = "//*[@value='az']")
-    WebElement azSort;
+    private WebElement azSort;
 
     @FindBy(xpath = "//*[@value='za']")
-    WebElement zaSort;
+    private WebElement zaSort;
 
     @FindBy(xpath = "//*[@value='lohi']")
-    WebElement lohiSort;
+    private WebElement lohiSort;
 
     @FindBy(xpath = "//*[@value='hilo']")
-    WebElement hiloSort;
+    private WebElement hiloSort;
 
     @FindBy(id = "logout_sidebar_link")
-    WebElement logoutMenu;
+    private WebElement logoutMenu;
 
     public void readTitlePage(){
         if(titlePage.size() >= 1){

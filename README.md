@@ -5,9 +5,9 @@ Web automation testing using Selenium, Cucumber, Java, and design pattern Page O
 
 This automation created using POM design pattern. What is POM? POM stands for Page Object Model. POM is a design pattern used to make automation. Where each page an application or website is used as its own class. This gives an advantage when one of a page's interface changes, then other classes will not be affected.
 
-Page Factory is a class provided by Selenium WebDriver to implement the Page Object Model. Page Factory is much enhanced model. To start with, we just need to import package `org.openqa.selenium.support.PageFactory`
+Page Factory is a class provided by Selenium WebDriver to implement the Page Object Model. Page Factory is much enhanced model. To start with, we just need to import package `org.openqa.selenium.support.PageFactory`.
 
-"Factory class can be used to make using Page Objects simpler and easier".
+Factory class can be used to make using Page Objects simpler and easier.
 
 We use Page Factory pattern to initialize web elements which are defined in Page Objects.
 

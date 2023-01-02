@@ -3,6 +3,7 @@ package pages;
 import helpers.GlobalVariables;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
@@ -18,21 +19,27 @@ public class LoginPage {
     }
 
     @FindBy(xpath = "//*[@class='login_logo']")
+    @CacheLookup
     private List<WebElement> logoImg;
 
     @FindBy(id = "user-name")
+    @CacheLookup
     private WebElement usernameField;
 
     @FindBy(id = "password")
+    @CacheLookup
     private WebElement passwordField;
 
     @FindBy(id = "login-button")
+    @CacheLookup
     private WebElement loginBtn;
 
     @FindBy(xpath = "//*[@class='bot_column']")
+    @CacheLookup
     private List<WebElement> botImg;
 
     @FindBy(xpath = "//*[@data-test='error']")
+    @CacheLookup
     private List<WebElement> errorMessage;
 
     public void seeLogoImg(){

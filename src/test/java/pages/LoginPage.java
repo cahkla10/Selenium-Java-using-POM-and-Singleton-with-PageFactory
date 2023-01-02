@@ -18,22 +18,22 @@ public class LoginPage {
     }
 
     @FindBy(xpath = "//*[@class='login_logo']")
-    List<WebElement> logoImg;
+    private List<WebElement> logoImg;
 
     @FindBy(id = "user-name")
-    WebElement usernameField;
+    private WebElement usernameField;
 
     @FindBy(id = "password")
-    WebElement passwordField;
+    private WebElement passwordField;
 
     @FindBy(id = "login-button")
-    WebElement loginBtn;
+    private WebElement loginBtn;
 
     @FindBy(xpath = "//*[@class='bot_column']")
-    List<WebElement> botImg;
+    private List<WebElement> botImg;
 
     @FindBy(xpath = "//*[@data-test='error']")
-    List<WebElement> errorMessage;
+    private List<WebElement> errorMessage;
 
     public void seeLogoImg(){
         if(logoImg.size() >= 1){

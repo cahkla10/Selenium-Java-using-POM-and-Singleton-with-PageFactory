@@ -3,6 +3,7 @@ package pages;
 import helpers.GlobalVariables;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
@@ -18,27 +19,35 @@ public class ProductsPage {
     }
 
     @FindBy(xpath = "//*[@class='title']")
+    @CacheLookup
     private List<WebElement> titlePage;
 
     @FindBy(id = "react-burger-menu-btn")
+    @CacheLookup
     private WebElement burgerMenu;
 
     @FindBy(xpath = "//*[@class='product_sort_container']")
+    @CacheLookup
     private WebElement sortDropDown;
 
     @FindBy(xpath = "//*[@value='az']")
+    @CacheLookup
     private WebElement azSort;
 
     @FindBy(xpath = "//*[@value='za']")
+    @CacheLookup
     private WebElement zaSort;
 
     @FindBy(xpath = "//*[@value='lohi']")
+    @CacheLookup
     private WebElement lohiSort;
 
     @FindBy(xpath = "//*[@value='hilo']")
+    @CacheLookup
     private WebElement hiloSort;
 
     @FindBy(id = "logout_sidebar_link")
+    @CacheLookup
     private WebElement logoutMenu;
 
     public void readTitlePage(){

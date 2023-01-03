@@ -5,7 +5,7 @@ import cucumber.api.java.en.Then;
 import pages.LoginPage;
 import setups.BrowserSetup;
 
-public class BackgroundLoginStep {
+public class BackgroundStep {
     LoginPage loginPage = new LoginPage(BrowserSetup.getInstance().webDriver);
 
     @Given("^user type \"([^\"]*)\" in address bar$")

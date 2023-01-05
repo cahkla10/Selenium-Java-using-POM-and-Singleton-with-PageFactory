@@ -6,11 +6,11 @@ import pages.LoginPage;
 import setups.BrowserSetup;
 
 public class BackgroundStep {
-    LoginPage loginPage = new LoginPage(BrowserSetup.getInstance().webDriver);
+     LoginPage loginPage = new LoginPage(BrowserSetup.getWebDriver());
 
     @Given("^user type \"([^\"]*)\" in address bar$")
     public void userTypeInAddressBar(String url) throws Throwable {
-        BrowserSetup.getInstance().getWebDriver().navigate().to(url);
+        BrowserSetup.getWebDriver().navigate().to(url);
     }
 
     @Then("^Sauce Demo web will displayed$")

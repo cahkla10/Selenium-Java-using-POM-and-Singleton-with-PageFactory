@@ -1,38 +1,29 @@
-# Selenium-Java-using-POM-and-Singleton-with-PageFactory
+# Selenium-Java-using-PageObjectModel-with-PageFactory
 Web automation testing using Selenium, Cucumber, Java, and design pattern Page Object Model (POM) and Singleton class for distribute the Web Driver with Page Factory
 
 ## 1. POM
 
-This automation created using POM design pattern. What is POM? POM stands for Page Object Model. POM is a design pattern used to make automation. Where each page an application or website is used as its own class. This gives an advantage when one of a page's interface changes, then other classes will not be affected.
-
-Page Factory is a class provided by Selenium WebDriver to implement the Page Object Model. Page Factory is much enhanced model. To start with, we just need to import package `org.openqa.selenium.support.PageFactory`.
-
-Factory class can be used to make using Page Objects simpler and easier.
-
-We use Page Factory pattern to initialize web elements which are defined in Page Objects.
-
-AjaxElementLocatorFactory is a lazy load concept in Page Factory pattern to identify WebElements only when they are used in any operation i.e. a timeOut for a WebElement can be assigned to the Object page class with the help of AjaxElementLocatorFactory.
+This automation created using POM design pattern. What is POM? POM stands for Page Object Model. POM is a design pattern used to make automation. Where each page an application or website is used as its own class. This gives an advantage when one of a page's interface changes, then other classes will not be affected. 
 
 ## 2. Cucumber dan Gherkin
 
 Then for Scenario scripting, we will use Cucumber and Gherkin.<br/>
 What is Cucumber? What is Gherkin?<br/>
 **Cucumber** is a tool that supports BDD *(Behavior-Driven Development)*.<br/>
-**Gherkin** is a set of grammar rules that makes plain text structured enough to be understood by Cucumber. Scenario scripts are written using Gherkin.<br/><br/>Referensi: https://docs.cucumber.io/docs/guides/overview/
+**Gherkin** is a set of grammar rules that makes plain text structured enough to be understood by Cucumber. Scenario scripts are written using Gherkin.<br/><br/>Ref: https://docs.cucumber.io/docs/guides/overview/
 
 ## 3. Preparation
 
-| Unsur        | Item                                                         |
+| Items        | Remarks                                                         |
 | ------------ | ------------------------------------------------------------ |
 | Editor       | Intellij IDEA Community (https://www.jetbrains.com/idea/download/#section=windows) |
 | JDK          | JDK 8 (https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) |
 | Web Driver   | Chrome Driver (https://chromedriver.chromium.org/downloads)<br />Firefox Driver (https://github.com/mozilla/geckodriver/releases) |
-| Browser      | Chrome latest version<br />Mozilla Firefox latest version    |
-| Dependencies | artifactId: `selenium-java`, groupId: `org.seleniumhq.selenium` <br />artifactId: `selenium-firefox-driver`, groupId: `org.seleniumhq.selenium`<br />artifactId: `selenium-safari-driver`, groupId: `org.seleniumhq.selenium`<br />artifactId: `selenium-chrome-driver`, groupId: `org.seleniumhq.selenium`<br />artifactId: `selenium-api`, groupId: `org.seleniumhq.selenium`<br />artifactId: `cucumber-junit`, groupId: `info.cukes`<br />artifactId: `cucumber-java`, groupId: `info.cukes`<br />artifactId: `cucumber-core`, groupId: `info.cukes`<br />artifactId: `gherkin`, groupId: `info.cukes`<br />artifactId: `testng`, groupId: `org.testng` <br />artifactId: `maven-clean-plugin`<br />artifactId: `maven-resources-plugin`<br />artifactId: `maven-compiler-plugin`<br />artifactId: `maven-surefire-plugin`<br />artifactId: `maven-jar-plugin`<br />artifactId: `maven-install-plugin`<br />artifactId: `maven-deploy-plugin`<br />artifactId: `maven-site-plugin`<br />artifactId: `maven-project-info-reports-plugin`|
+| Browser      | Chrome/Mozilla Firefox/Edge latest version   |
 
 ## 4. Installation
 
-Install Editor Intellij Idea Community and JDK in komputer.
+Install Editor Intellij Idea Community and JDK.
 
 ## 5. Configuration
 
@@ -54,7 +45,7 @@ Install Editor Intellij Idea Community and JDK in komputer.
 
 #### Clone
 
-Clone this repository using this command `git clone https://github.com/cahkla10/Selenium-Java-using-POM-without-PageFactory` in terminal or command prompt.
+Clone this repository through terminal or command prompt.
 
 ### Intellij IDEA Configuration
 
@@ -85,6 +76,7 @@ Open this automation using Intellij IDEA.
 				|-- steps
 		|-- resources
 				|-- features
+				|-- webdriver
 ```
 
 - `helpers` package for Runner class or other required class

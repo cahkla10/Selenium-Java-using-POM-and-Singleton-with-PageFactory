@@ -94,5 +94,4 @@ Second Way:
 - Using terminal or cmd, type ```mvn test```
 
 Run and generate report:
-- ```mvn test site```
-- ```mvn surefire-report:report```
+- ```mvn test site surefire-report:report```

@@ -11,20 +11,32 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 1404300200,
+              "status": "passed"
             },
             "line": 6,
             "name": "user type \"https://www.saucedemo.com/\" in address bar",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.saucedemo.com/",
+                  "offset": 11
+                }
+              ],
+              "location": "BackgroundLoginStep.userTypeInAddressBar(String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 43280100,
+              "status": "passed"
             },
             "line": 7,
             "name": "Sauce Demo web will displayed",
-            "match": {},
+            "match": {
+              "location": "BackgroundLoginStep.sauceDemoWebWillDisplayed()"
+            },
             "keyword": "Then "
           }
         ]
@@ -33,9 +45,8 @@
         "before": [
           {
             "result": {
-              "duration": 216000,
-              "error_message": "cucumber.runtime.CucumberException: Failed to instantiate class setups.Hook\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)\r\n\t... 30 more\r\nCaused by: java.lang.NullPointerException\r\n\tat setups.BrowserSetup.startWebDriver(BrowserSetup.java:39)\r\n\tat setups.BrowserSetup.\u003cinit\u003e(BrowserSetup.java:22)\r\n\tat setups.Hook.\u003cinit\u003e(Hook.java:8)\r\n\t... 35 more\r\n",
-              "status": "failed"
+              "duration": 2956731600,
+              "status": "passed"
             },
             "match": {
               "location": "Hook.before()"
@@ -49,9 +60,8 @@
         "after": [
           {
             "result": {
-              "duration": 131000,
-              "error_message": "cucumber.runtime.CucumberException: Failed to instantiate class setups.Hook\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)\r\n\t... 30 more\r\nCaused by: java.lang.NullPointerException\r\n\tat setups.BrowserSetup.startWebDriver(BrowserSetup.java:39)\r\n\tat setups.BrowserSetup.\u003cinit\u003e(BrowserSetup.java:22)\r\n\tat setups.Hook.\u003cinit\u003e(Hook.java:8)\r\n\t... 35 more\r\n",
-              "status": "failed"
+              "duration": 633242200,
+              "status": "passed"
             },
             "match": {
               "location": "Hook.after()"
@@ -63,38 +73,68 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 107740400,
+              "status": "passed"
             },
             "line": 11,
             "name": "user input username \"standard_user\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginStep.userInputUsername(String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 101988300,
+              "status": "passed"
             },
             "line": 12,
             "name": "user input password \"secret_sauce\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "secret_sauce",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginStep.userInputPassword(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 102100100,
+              "status": "passed"
             },
             "line": 13,
             "name": "user click Login button",
-            "match": {},
+            "match": {
+              "location": "LoginStep.userClickLoginButton()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 26297500,
+              "status": "passed"
             },
             "line": 14,
-            "name": "user redirected to Product page",
-            "match": {},
+            "name": "user redirected to \"PRODUCTS\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PRODUCTS",
+                  "offset": 20
+                }
+              ],
+              "location": "LoginStep.userRedirectedToProductPage(String)"
+            },
             "keyword": "Then "
           }
         ],
@@ -102,6 +142,630 @@
           {
             "line": 9,
             "name": "@TC001"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "User open the URL",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1189513500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user type \"https://www.saucedemo.com/\" in address bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.saucedemo.com/",
+                  "offset": 11
+                }
+              ],
+              "location": "BackgroundLoginStep.userTypeInAddressBar(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 35560100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Sauce Demo web will displayed",
+            "match": {
+              "location": "BackgroundLoginStep.sauceDemoWebWillDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1102909500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.before()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "TC002 - User login with incorrect credentials",
+        "description": "",
+        "id": "login-scenarios;tc002---user-login-with-incorrect-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 613548000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 87805400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user input username \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginStep.userInputUsername(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 79247300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user input password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginStep.userInputPassword(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54803200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user click Login button",
+            "match": {
+              "location": "LoginStep.userClickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26070600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "warning message appear \"Epic sadface: Username is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Epic sadface: Username is required",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginStep.warningMessageAppear(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Login"
+          },
+          {
+            "line": 16,
+            "name": "@TC002"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "User open the URL",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 838886800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user type \"https://www.saucedemo.com/\" in address bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.saucedemo.com/",
+                  "offset": 11
+                }
+              ],
+              "location": "BackgroundLoginStep.userTypeInAddressBar(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 36122100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Sauce Demo web will displayed",
+            "match": {
+              "location": "BackgroundLoginStep.sauceDemoWebWillDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1086167400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.before()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "TC002 - User login with incorrect credentials",
+        "description": "",
+        "id": "login-scenarios;tc002---user-login-with-incorrect-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 624733800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 98272700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user input username \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginStep.userInputUsername(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 88821000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user input password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginStep.userInputPassword(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63844400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user click Login button",
+            "match": {
+              "location": "LoginStep.userClickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32770900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "warning message appear \"Epic sadface: Password is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Epic sadface: Password is required",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginStep.warningMessageAppear(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Login"
+          },
+          {
+            "line": 16,
+            "name": "@TC002"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "User open the URL",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1226913600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user type \"https://www.saucedemo.com/\" in address bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.saucedemo.com/",
+                  "offset": 11
+                }
+              ],
+              "location": "BackgroundLoginStep.userTypeInAddressBar(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 25146000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Sauce Demo web will displayed",
+            "match": {
+              "location": "BackgroundLoginStep.sauceDemoWebWillDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1118438900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.before()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "TC002 - User login with incorrect credentials",
+        "description": "",
+        "id": "login-scenarios;tc002---user-login-with-incorrect-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 613112200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 78924300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user input username \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginStep.userInputUsername(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 104826200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user input password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "secret_sauce",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginStep.userInputPassword(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57017400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user click Login button",
+            "match": {
+              "location": "LoginStep.userClickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26474500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "warning message appear \"Epic sadface: Username is required\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Epic sadface: Username is required",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginStep.warningMessageAppear(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Login"
+          },
+          {
+            "line": 16,
+            "name": "@TC002"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "User open the URL",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1226313000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user type \"https://www.saucedemo.com/\" in address bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.saucedemo.com/",
+                  "offset": 11
+                }
+              ],
+              "location": "BackgroundLoginStep.userTypeInAddressBar(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13524100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Sauce Demo web will displayed",
+            "match": {
+              "location": "BackgroundLoginStep.sauceDemoWebWillDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1124705600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.before()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "TC002 - User login with incorrect credentials",
+        "description": "",
+        "id": "login-scenarios;tc002---user-login-with-incorrect-credentials;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 610336400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 99158100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user input username \"standarduser\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standarduser",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginStep.userInputUsername(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 88976100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user input password \"secretsauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "secretsauce",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginStep.userInputPassword(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54486800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user click Login button",
+            "match": {
+              "location": "LoginStep.userClickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 28412800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "warning message appear \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Epic sadface: Username and password do not match any user in this service",
+                  "offset": 24
+                }
+              ],
+              "location": "LoginStep.warningMessageAppear(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@Login"
+          },
+          {
+            "line": 16,
+            "name": "@TC002"
           }
         ]
       }

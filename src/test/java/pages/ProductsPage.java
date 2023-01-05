@@ -10,6 +10,8 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
+
 public class ProductsPage {
     private WebDriver webDriver;
 
@@ -50,10 +52,9 @@ public class ProductsPage {
     @CacheLookup
     private WebElement logoutMenu;
 
-    public void readTitlePage(){
+    public void readTitlePage(String exTitle){
         if(titlePage.size() >= 1){
-            System.out.println("Expected: PRODUCTS");
-            System.out.println("Result: " + titlePage.get(0).getText());
+            assertEquals(exTitle,titlePage.get(0).getText());
         }
     }
 

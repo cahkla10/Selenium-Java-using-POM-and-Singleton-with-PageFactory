@@ -8,8 +8,8 @@ import pages.ProductsPage;
 import setups.BrowserSetup;
 
 public class LoginStep {
-    LoginPage loginPage = new LoginPage(BrowserSetup.getInstance().webDriver);
-    ProductsPage productsPage = new ProductsPage(BrowserSetup.getInstance().webDriver);
+    LoginPage loginPage = new LoginPage(BrowserSetup.getWebDriver());
+    ProductsPage productsPage = new ProductsPage(BrowserSetup.getWebDriver());
 
     @Given("^user input username \"([^\"]*)\"$")
     public void userInputUsername(String username) {
@@ -28,9 +28,9 @@ public class LoginStep {
         loginPage.clickLoginBtn();
     }
 
-    @Then("^user redirected to Product page$")
-    public void userRedirectedToProductPage(){
-        productsPage.readTitlePage();
+    @Then("^user redirected to \"([^\"]*)\" page$")
+    public void userRedirectedToProductPage(String exTitle){
+        productsPage.readTitlePage(exTitle);
     }
 
     @Then("^warning message appear \"([^\"]*)\"$")

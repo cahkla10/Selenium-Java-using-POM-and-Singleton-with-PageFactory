@@ -13,9 +13,8 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 216000,
-  "error_message": "cucumber.runtime.CucumberException: Failed to instantiate class setups.Hook\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)\r\n\t... 30 more\r\nCaused by: java.lang.NullPointerException\r\n\tat setups.BrowserSetup.startWebDriver(BrowserSetup.java:39)\r\n\tat setups.BrowserSetup.\u003cinit\u003e(BrowserSetup.java:22)\r\n\tat setups.Hook.\u003cinit\u003e(Hook.java:8)\r\n\t... 35 more\r\n",
-  "status": "failed"
+  "duration": 2956731600,
+  "status": "passed"
 });
 formatter.background({
   "line": 5,
@@ -34,13 +33,25 @@ formatter.step({
   "name": "Sauce Demo web will displayed",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "arguments": [
+    {
+      "val": "https://www.saucedemo.com/",
+      "offset": 11
+    }
+  ],
+  "location": "BackgroundLoginStep.userTypeInAddressBar(String)"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 1404300200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BackgroundLoginStep.sauceDemoWebWillDisplayed()"
+});
+formatter.result({
+  "duration": 43280100,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 10,
@@ -73,28 +84,697 @@ formatter.step({
 });
 formatter.step({
   "line": 14,
-  "name": "user redirected to Product page",
+  "name": "user redirected to \"PRODUCTS\" page",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "arguments": [
+    {
+      "val": "standard_user",
+      "offset": 21
+    }
+  ],
+  "location": "LoginStep.userInputUsername(String)"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 107740400,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "arguments": [
+    {
+      "val": "secret_sauce",
+      "offset": 21
+    }
+  ],
+  "location": "LoginStep.userInputPassword(String)"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 101988300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginStep.userClickLoginButton()"
+});
+formatter.result({
+  "duration": 102100100,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "PRODUCTS",
+      "offset": 20
+    }
+  ],
+  "location": "LoginStep.userRedirectedToProductPage(String)"
+});
+formatter.result({
+  "duration": 26297500,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 131000,
-  "error_message": "cucumber.runtime.CucumberException: Failed to instantiate class setups.Hook\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)\r\n\t... 30 more\r\nCaused by: java.lang.NullPointerException\r\n\tat setups.BrowserSetup.startWebDriver(BrowserSetup.java:39)\r\n\tat setups.BrowserSetup.\u003cinit\u003e(BrowserSetup.java:22)\r\n\tat setups.Hook.\u003cinit\u003e(Hook.java:8)\r\n\t... 35 more\r\n",
-  "status": "failed"
+  "duration": 633242200,
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "line": 17,
+  "name": "TC002 - User login with incorrect credentials",
+  "description": "",
+  "id": "login-scenarios;tc002---user-login-with-incorrect-credentials",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 16,
+      "name": "@TC002"
+    }
+  ]
+});
+formatter.step({
+  "line": 18,
+  "name": "user input username \"\u003cusername\u003e\"",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 19,
+  "name": "user input password \"\u003cpassword\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 20,
+  "name": "user click Login button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "warning message appear \"\u003cmessage\u003e\"",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 22,
+  "name": "",
+  "description": "",
+  "id": "login-scenarios;tc002---user-login-with-incorrect-credentials;",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "password",
+        "message"
+      ],
+      "line": 23,
+      "id": "login-scenarios;tc002---user-login-with-incorrect-credentials;;1"
+    },
+    {
+      "cells": [
+        "",
+        "",
+        "Epic sadface: Username is required"
+      ],
+      "line": 24,
+      "id": "login-scenarios;tc002---user-login-with-incorrect-credentials;;2"
+    },
+    {
+      "cells": [
+        "standard_user",
+        "",
+        "Epic sadface: Password is required"
+      ],
+      "line": 25,
+      "id": "login-scenarios;tc002---user-login-with-incorrect-credentials;;3"
+    },
+    {
+      "cells": [
+        "",
+        "secret_sauce",
+        "Epic sadface: Username is required"
+      ],
+      "line": 26,
+      "id": "login-scenarios;tc002---user-login-with-incorrect-credentials;;4"
+    },
+    {
+      "cells": [
+        "standarduser",
+        "secretsauce",
+        "Epic sadface: Username and password do not match any user in this service"
+      ],
+      "line": 27,
+      "id": "login-scenarios;tc002---user-login-with-incorrect-credentials;;5"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.before({
+  "duration": 1102909500,
+  "status": "passed"
+});
+formatter.background({
+  "line": 5,
+  "name": "User open the URL",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 6,
+  "name": "user type \"https://www.saucedemo.com/\" in address bar",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 7,
+  "name": "Sauce Demo web will displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "https://www.saucedemo.com/",
+      "offset": 11
+    }
+  ],
+  "location": "BackgroundLoginStep.userTypeInAddressBar(String)"
+});
+formatter.result({
+  "duration": 1189513500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BackgroundLoginStep.sauceDemoWebWillDisplayed()"
+});
+formatter.result({
+  "duration": 35560100,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 24,
+  "name": "TC002 - User login with incorrect credentials",
+  "description": "",
+  "id": "login-scenarios;tc002---user-login-with-incorrect-credentials;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@Login"
+    },
+    {
+      "line": 16,
+      "name": "@TC002"
+    }
+  ]
+});
+formatter.step({
+  "line": 18,
+  "name": "user input username \"\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 19,
+  "name": "user input password \"\"",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 20,
+  "name": "user click Login button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "warning message appear \"Epic sadface: Username is required\"",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "",
+      "offset": 21
+    }
+  ],
+  "location": "LoginStep.userInputUsername(String)"
+});
+formatter.result({
+  "duration": 87805400,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "",
+      "offset": 21
+    }
+  ],
+  "location": "LoginStep.userInputPassword(String)"
+});
+formatter.result({
+  "duration": 79247300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginStep.userClickLoginButton()"
+});
+formatter.result({
+  "duration": 54803200,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Epic sadface: Username is required",
+      "offset": 24
+    }
+  ],
+  "location": "LoginStep.warningMessageAppear(String)"
+});
+formatter.result({
+  "duration": 26070600,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 613548000,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1086167400,
+  "status": "passed"
+});
+formatter.background({
+  "line": 5,
+  "name": "User open the URL",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 6,
+  "name": "user type \"https://www.saucedemo.com/\" in address bar",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 7,
+  "name": "Sauce Demo web will displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "https://www.saucedemo.com/",
+      "offset": 11
+    }
+  ],
+  "location": "BackgroundLoginStep.userTypeInAddressBar(String)"
+});
+formatter.result({
+  "duration": 838886800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BackgroundLoginStep.sauceDemoWebWillDisplayed()"
+});
+formatter.result({
+  "duration": 36122100,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 25,
+  "name": "TC002 - User login with incorrect credentials",
+  "description": "",
+  "id": "login-scenarios;tc002---user-login-with-incorrect-credentials;;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@Login"
+    },
+    {
+      "line": 16,
+      "name": "@TC002"
+    }
+  ]
+});
+formatter.step({
+  "line": 18,
+  "name": "user input username \"standard_user\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 19,
+  "name": "user input password \"\"",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 20,
+  "name": "user click Login button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "warning message appear \"Epic sadface: Password is required\"",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "standard_user",
+      "offset": 21
+    }
+  ],
+  "location": "LoginStep.userInputUsername(String)"
+});
+formatter.result({
+  "duration": 98272700,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "",
+      "offset": 21
+    }
+  ],
+  "location": "LoginStep.userInputPassword(String)"
+});
+formatter.result({
+  "duration": 88821000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginStep.userClickLoginButton()"
+});
+formatter.result({
+  "duration": 63844400,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Epic sadface: Password is required",
+      "offset": 24
+    }
+  ],
+  "location": "LoginStep.warningMessageAppear(String)"
+});
+formatter.result({
+  "duration": 32770900,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 624733800,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1118438900,
+  "status": "passed"
+});
+formatter.background({
+  "line": 5,
+  "name": "User open the URL",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 6,
+  "name": "user type \"https://www.saucedemo.com/\" in address bar",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 7,
+  "name": "Sauce Demo web will displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "https://www.saucedemo.com/",
+      "offset": 11
+    }
+  ],
+  "location": "BackgroundLoginStep.userTypeInAddressBar(String)"
+});
+formatter.result({
+  "duration": 1226913600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BackgroundLoginStep.sauceDemoWebWillDisplayed()"
+});
+formatter.result({
+  "duration": 25146000,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 26,
+  "name": "TC002 - User login with incorrect credentials",
+  "description": "",
+  "id": "login-scenarios;tc002---user-login-with-incorrect-credentials;;4",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@Login"
+    },
+    {
+      "line": 16,
+      "name": "@TC002"
+    }
+  ]
+});
+formatter.step({
+  "line": 18,
+  "name": "user input username \"\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 19,
+  "name": "user input password \"secret_sauce\"",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 20,
+  "name": "user click Login button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "warning message appear \"Epic sadface: Username is required\"",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "",
+      "offset": 21
+    }
+  ],
+  "location": "LoginStep.userInputUsername(String)"
+});
+formatter.result({
+  "duration": 78924300,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "secret_sauce",
+      "offset": 21
+    }
+  ],
+  "location": "LoginStep.userInputPassword(String)"
+});
+formatter.result({
+  "duration": 104826200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginStep.userClickLoginButton()"
+});
+formatter.result({
+  "duration": 57017400,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Epic sadface: Username is required",
+      "offset": 24
+    }
+  ],
+  "location": "LoginStep.warningMessageAppear(String)"
+});
+formatter.result({
+  "duration": 26474500,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 613112200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1124705600,
+  "status": "passed"
+});
+formatter.background({
+  "line": 5,
+  "name": "User open the URL",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 6,
+  "name": "user type \"https://www.saucedemo.com/\" in address bar",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 7,
+  "name": "Sauce Demo web will displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "https://www.saucedemo.com/",
+      "offset": 11
+    }
+  ],
+  "location": "BackgroundLoginStep.userTypeInAddressBar(String)"
+});
+formatter.result({
+  "duration": 1226313000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BackgroundLoginStep.sauceDemoWebWillDisplayed()"
+});
+formatter.result({
+  "duration": 13524100,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 27,
+  "name": "TC002 - User login with incorrect credentials",
+  "description": "",
+  "id": "login-scenarios;tc002---user-login-with-incorrect-credentials;;5",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@Login"
+    },
+    {
+      "line": 16,
+      "name": "@TC002"
+    }
+  ]
+});
+formatter.step({
+  "line": 18,
+  "name": "user input username \"standarduser\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 19,
+  "name": "user input password \"secretsauce\"",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 20,
+  "name": "user click Login button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "warning message appear \"Epic sadface: Username and password do not match any user in this service\"",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "standarduser",
+      "offset": 21
+    }
+  ],
+  "location": "LoginStep.userInputUsername(String)"
+});
+formatter.result({
+  "duration": 99158100,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "secretsauce",
+      "offset": 21
+    }
+  ],
+  "location": "LoginStep.userInputPassword(String)"
+});
+formatter.result({
+  "duration": 88976100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginStep.userClickLoginButton()"
+});
+formatter.result({
+  "duration": 54486800,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Epic sadface: Username and password do not match any user in this service",
+      "offset": 24
+    }
+  ],
+  "location": "LoginStep.warningMessageAppear(String)"
+});
+formatter.result({
+  "duration": 28412800,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 610336400,
+  "status": "passed"
 });
 });

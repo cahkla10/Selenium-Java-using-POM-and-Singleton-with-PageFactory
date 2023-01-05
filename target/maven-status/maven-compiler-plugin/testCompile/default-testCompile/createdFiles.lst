@@ -5,4 +5,4 @@ helpers\TestRunner.class
 steps\ProductsStep.class
 steps\LoginStep.class
 setups\Hook.class
-helpers\Common.class
+helpers\GlobalVariables.class

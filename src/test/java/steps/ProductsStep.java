@@ -6,7 +6,7 @@ import pages.ProductsPage;
 import setups.BrowserSetup;
 
 public class ProductsStep {
-    ProductsPage productsPage = new ProductsPage(BrowserSetup.getInstance().webDriver);
+    ProductsPage productsPage = new ProductsPage(BrowserSetup.getWebDriver());
 
     @When("^user click sort drop down$")
     public void user_click_sort_drop_down(){

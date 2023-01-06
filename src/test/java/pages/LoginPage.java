@@ -10,6 +10,8 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
+
 public class LoginPage {
     private WebDriver webDriver;
 
@@ -43,13 +45,13 @@ public class LoginPage {
     private List<WebElement> errorMessage;
 
     public void seeLogoImg(){
-        if(logoImg.size() >= 1){
+        if(logoImg.size() > 0){
             System.out.println("Sauce Lab Logo displayed!");
         }
     }
 
     public void seeBotImg(){
-        if(botImg.size() >= 1){
+        if(botImg.size() > 0){
             System.out.println("Sauce Lab Bot Image displayed!");
         }
     }
@@ -75,9 +77,9 @@ public class LoginPage {
     }
 
     public void verifyWarningMessage(String message){
-        if(errorMessage.size() >= 1){
+        if(errorMessage.size() > 0){
             System.out.println("Expected: " + message);
-            System.out.println("Result: " + errorMessage.get(0).getText());
+            assertEquals(message,errorMessage.get(0).getText());
         }
     }
 }

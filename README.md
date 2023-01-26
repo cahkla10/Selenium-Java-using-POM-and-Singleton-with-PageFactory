@@ -1,5 +1,5 @@
 # Selenium-Java-using-PageObjectModel-with-PageFactory
-Web automation testing using Selenium, Cucumber, Java, and design pattern Page Object Model (POM) and Singleton class for distribute the Web Driver with Page Factory
+Web automation testing using Selenium, Cucumber, Java, and design pattern Page Object Model (POM) with Page Factory.
 
 ## 1. POM
 
